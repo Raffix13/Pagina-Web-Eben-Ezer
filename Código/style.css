@@ -1,0 +1,677 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 245, 238);
+}
+
+/* Selector de idioma */
+.selector_idioma{
+    color: rgb(192, 177, 177);
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    z-index: 500;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: linear-gradient(to right, #000000 10%, #ded0b7 90%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/*Degradado superior*/
+
+.top-gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+    pointer-events: none;
+    z-index: 5;
+}
+
+
+/* Navegador de la página + Imagen Fondo*/
+
+#hero-header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/Contenido/Fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: brightness(60%);
+    transition: opacity 0.3s ease-out;
+}
+
+
+nav {
+    position: fixed;
+    margin: 20px 200px 0 200px;
+    background: linear-gradient(to right, #000000 10%, #ded0b7 90%);
+    padding: 10px 30px ;
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 70%; 
+    z-index: 10;
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+nav ul li a:hover {
+    color: #857979;
+    text-decoration: none;
+}
+
+
+.Logo{
+    width: 65%;
+}
+
+
+/* Texto entrada */
+
+.Texto_entrada{
+    text-align: center;
+    margin-top: 300px;
+    font-size: 35px;
+    color:#ded0b7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*Segunda parte*/
+
+.Introduccion{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(250, 245, 238);
+    text-align: center;
+    font-size: 25px;
+    padding-top: 15px;
+    margin: 0;
+}
+
+.Introduccion h2{
+    color: #dbc8a7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Introduccion p{
+    font-size: 20px;
+    padding: 0 30%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Introduccion span{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Botón*/
+
+.Introduccion button{
+    width: 180px;
+    padding: 10px;
+    background: linear-gradient(to right, #000000 , #ded0b7 ); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    color: white;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.Introduccion button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/*Último video*/
+
+.Video_section {
+    display: flex;
+    height: 75vh;
+    flex-direction:row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 60px;
+    padding: 0 5%;
+    flex-wrap: wrap;
+}
+
+.Video_info{
+    background: linear-gradient(to bottom, #9b9184 , #ded0b7 );
+    flex: 1;
+    max-width: 500px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    border: #000000 solid 3px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 5%;
+}
+.Video_info h2 {
+    color: #f5ecde;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.Video_info p {
+    font-size: 18px;
+    color: #000000;
+    
+}
+
+
+#video-container {
+    flex: 1;
+    max-width: 700px;
+}
+
+#video-container iframe {
+    width: 90%;
+    max-width: 700px;
+    height: 400px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.nou_capitol{
+    width: 100%;
+    height: 120vh;
+    background-color:  rgb(250, 245, 238);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+.nou_capitol h2{
+    color:  #dbc8a7;
+}
+
+.nou_capitol p{
+    font-size: 20px;
+    padding: 0 30%;
+}
+
+
+.nou_capitol button{
+    width: 180px;
+    padding: 10px;
+    background: linear-gradient(to right, #000000 , #ded0b7 ); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    color: white;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.nou_capitol button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.nou_capitol img{
+    display: block;
+    justify-content: center;
+    width: 60%;
+    margin: 50px 300px;
+    border: 3px solid #706b61;
+    border-radius: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nou_capitol img:hover{
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+/* Sección "CINE SUNTEM?" */
+
+.despre_noi{
+    width: 100%;
+    height: 25vh;
+    background: linear-gradient(to bottom, #615c56 20% , #ded0b7  );
+    text-align: center;
+    padding-top: 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: #f8ead0;
+}
+
+/* Anul 1999 */
+
+.Anul_1999{
+    display: flex;
+    justify-content: space-between;
+    margin: 10%;
+}
+
+
+.Anul_1999 img{
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.conţinut_text{
+    max-width: 700px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.conţinut_text h3{
+    font-size: 30px;
+    color: #dbc8a7;
+}
+
+.conţinut_text p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* Anul 2001-2003 */
+
+.Anul_2001_2003{
+    display: flex;
+    justify-content: space-between;
+    margin: 10%;
+}
+
+.Anul_2001_2003 img{
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Anul 2007 */
+
+.Anul_2007 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10%;
+}
+
+.Anul_2007 img{
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+/* Prezent */
+
+.Anul_2024 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10%;
+}
+
+.Anul_2024 img{
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Dirección */
+
+.adresa{
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(to top, #2a2929  , #ded0b7 );
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.adresa img{
+    margin-top: 30px;
+}
+
+
+
+
+/* Sección "Construim impreuna"*/
+
+
+.construim_impreuna{
+    width: 100%;
+    height: 35vh;
+    background: linear-gradient(to bottom, #615c56 20% , #ded0b7  );
+    text-align: center;
+    padding-top: 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.construim_impreuna h2{
+    color: #f8ead0;
+    font-size: 40px;
+}
+
+.construim_impreuna p{
+    font-size: 18px;
+    margin: 15px 400px;
+}
+
+.carrusel-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+}
+
+.carrusel {
+    display: flex;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+    touch-action: pan-x;
+}
+
+.carrusel img {
+    flex-shrink: 0;
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    cursor: grab;
+}
+
+/* Flechas */
+.carrusel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+.carrusel-btn.left {
+    left: 10px;
+}
+.carrusel-btn.right {
+    right: 10px;
+}
+
+
+
+.color{
+    color:rgb(109, 109, 109);;
+}
+
+/* Botón Detalles */
+
+
+.Detalii_button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.Detalii_button button{
+    width: 180px;
+    padding: 10px;
+    background: linear-gradient(to right, #000000 , #ded0b7 ); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    border-radius: 35px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.Detalii_button a{
+    text-decoration: none;
+}
+
+.Detalii_button button:hover{
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Video */
+video{
+    width: 100%;
+}
+
+.recorte{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.recorte video {
+    width: 100%;
+    height: auto;
+    min-height: 500px; 
+    object-fit: cover;          
+    object-position: center;
+    transform: translateY(-120px);   
+}
+
+.Noiembrie_2023{
+    text-align: center;
+    margin: 40px 400px;
+}
+
+.Noiembrie_2023 h3{
+    font-size: 35px;
+    color: #d3c7b0 ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Noiembrie_2023 p{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.Noiembrie_2024{
+    text-align: center;
+    margin: 40px 400px;
+}
+
+.Noiembrie_2024 h3{
+    font-size: 35px;
+    color: #d3c7b0 ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Noiembrie_2024 p{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Mai_2025{
+    text-align: center;
+    margin: 40px 400px;
+}
+
+.Mai_2025  h3{
+    font-size: 35px;
+    color: #d3c7b0 ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Mai_2025 p{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cont_bancar{
+    text-align: center;
+    margin: 40px 400px;
+}
+
+.cont_bancar  h3{
+    font-size: 35px;
+    color: #d3c7b0 ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cont_bancar p{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cont_bancar span{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+/* Sección "Contacteaza" */
+
+.Contacteaza{
+    width: 100%;
+    height: 35vh;
+    background: linear-gradient(to bottom, #615c56 20% , #ded0b7  );
+    text-align: center;
+    padding-top: 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Contacteaza h2{
+    color: #f8ead0;
+    font-size: 40px;
+}
+
+.Contacteaza p{
+    font-size: 18px;
+    margin: 15px 400px;
+}
+
+.text_contact{
+    color: #a89f8e;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.form_section {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.form_section h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #a89f8e;
+}
+
+.fila_doble {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.campo {
+    margin-left: 40px ;
+    flex: 1;
+    min-width: 250px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width:80%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+textarea{
+    width:91%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.section_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.section_button button {
+    width: 180px;
+    padding: 10px;
+    background: linear-gradient(to right, #000000 , #ded0b7 ); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    color: white;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.section_button button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}

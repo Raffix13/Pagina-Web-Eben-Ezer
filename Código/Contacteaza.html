@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Biserica Eben-Ezer</title>
+    <link rel="icon" href="/Contenido/Logo.png" type="image/png">
+</head>
+<body>
+    <select id="language-switcher"  class="selector_idioma">
+        <option value="ro">Română</option>
+        <option value="es">Español</option>
+    </select>
+    <header>
+    <div class="top-gradient"></div>
+        <nav>
+        <div>
+            <a href="/Código/Home.html"> <img class="Logo" src="/Contenido/Logo.png" alt="Logotip"> </a>
+        </div>
+        <div class="nav_links">
+            <ul>
+            <li><a href="/Código/Cine_suntem.html" data-i18n="quienes_somos">CINE SUNTEM?</a></li>
+            <li><a href="/Código/Construim_impreuna.html"  data-i18n="construimos_juntos">CONSTRUIM ÎMPREUNĂ</a></li>
+            <li><a href="/Código/Contacteaza.html" data-i18n="contactanos">CONTACTEAZA-NE</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+    <div class="Contacteaza">
+        <h2 data-i18n="contactanos">CONTACTEAZĂ-NE</h2>
+        <p data-i18n="descripcion_contactanos">Dacă doriți să ne comunicați vreun lucru sau aveți nevoie de rugăciune, vă invităm cu drag să ne contactați.</p>
+        <p data-i18n="descripcion_2_contactanos">Suntem aici pentru a vă asculta și a ne ruga împreună pentru nevoile dumneavoastră. Nu ezitați să ne scrieți!</p>
+    </div>
+
+    <section class="form_section">
+        <h3 class="text_contact" data-i18n="estamos_con_vosotros">SUNTEM ALĂTURI DE VOI!</h3>
+        <form action="#" method="post">
+            <div class="fila_doble">
+                <div class="campo">
+                    <label for="nombre" data-i18n="Nombre">Nume</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="apellido" data-i18n="Apellido">Prenume</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+            </div>
+            <div class="fila_doble">
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo">
+                    <label for="tema" data-i18n="Sujeto">Subiect</label>
+                    <input type="text" id="tema" name="tema" required>
+                </div>
+            </div>
+            <div class="campo">
+                <label for="mensaje" data-i18n="Mensaje">Mesajul</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <div class="section_button">
+                <button type="submit" data-i18n="Envia">Trimite</button>
+            </div>
+        </form>
+    </section>
+
+    <div class="adresa">
+        <img src="/Contenido/Logo.png" alt="Logo">
+        <div class="text_adresa">
+            <p>Camí de la Donació, 89, 12004, Castellón de la Plana</p>
+            <p>biserica_ebenezer@yahoo.es  |  Tel: 624-227-214</p>
+            <p>©2025 EBEN EZER | CASTELLÓN DE LA PLANA</p>
+        </div>
+    </div>
+    <script src="/Código/java.js"></script>
+</body>
+</html>
